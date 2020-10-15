@@ -13,7 +13,7 @@ open class TagView: UIButton {
 
     @IBInspectable open var viewCornerRadius: CGFloat = 0 {
         didSet {
-            layer.viewCornerRadius = viewCornerRadius
+            layer.cornerRadius = viewCornerRadius
             layer.masksToBounds = viewCornerRadius > 0
         }
     }
